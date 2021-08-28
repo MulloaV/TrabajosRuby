@@ -11,4 +11,5 @@ def adivina_numero ng
     
 end 
 
+puts "Por favor, ingresa un número"
 puts adivina_numero  gets.chomp.to_i
