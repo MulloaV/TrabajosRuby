@@ -37,5 +37,5 @@ end
 
 #Herencia // Override
 
-Clase serVivo << Clase Vertebrado - Clase Invertebrado
+#Clase serVivo << Clase Vertebrado - Clase Invertebrado
 
