@@ -14,6 +14,9 @@ class Ruta < Bicicleta
     def distancia
          puts "Claris"
     end 
+    def cerros
+        puts "No puedo andar en cerros"
+    end
 end 
 
 cambioGenerico = Bicicleta.new
@@ -26,4 +29,5 @@ cambioRuta.andar
 
 cambioGenerico.andar 
 cambioMtb.cerros 
-cambioRuta.distanciagit 
+cambioRuta.distancia
+cambioRuta.cerros
