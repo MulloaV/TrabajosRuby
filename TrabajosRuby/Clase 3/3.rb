@@ -1,28 +1,41 @@
-#pendiente
+#Ficheros
 
-class CodingDojo 
-    @@no_of_branches = 0
-    def initialize(id, name, address) 
-      @branch_id = id 
-      @branch_name = name 
-      @branch_address = address 
-      @@no_of_branches += 1 
-      puts "Created branch #{@@no_of_branches}"
-    end
-    def hello 
-      puts "Hello CodingDojo!"
-    end
-    def display_all
-      puts "Branch ID: #{@branch_id}"
-      puts "Branch Name: #{@branch_name}" 
-      puts "Branch Address: #{@branch_address}"
-    end
-    def self.num_of_branches
-      @@no_of_branches
-    end
+#Modos de apertura 
+#r > Lectura
+#r+ >
+#w > Escritura 
+=begin
+  
+
+File.open("hola.txt", 'r') do |f1|
+  while linea = f1.gets
+    puts linea
   end
-  seattle = CodingDojo.new(1, "Seattle", "123 Seattle Avenue")
-  san_jose = CodingDojo.new(2, "San Jose", "456 San Jose Boulevard")
-  burbank = CodingDojo.new(3, "Burbank", "789 Burbank Street")
+end
 
-  puts {burbank.no_of_branches} #{burbank.no_of_branches}
+File.open("chao.txt", 'w') do |f2|
+  f2.puts "Por que la vida \n puede ser maravillosa"
+end
+
+
+
+
+#Directorios
+
+require 'find'
+
+Find.find('./') do |f|
+    type = case
+    when File.file?(f) then "Archivo" 
+    when File.directory?(f) then "Directorio"
+    else "?"
+end
+puts "#{type}: #{f}"
+end 
+
+=end 
+
+#Herencia // Override
+
+Clase serVivo << Clase Vertebrado - Clase Invertebrado
+
